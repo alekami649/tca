@@ -1,2 +1,2 @@
-# tca
+# TCA
 TCA - Text Correction Algorithm
