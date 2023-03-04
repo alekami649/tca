@@ -1,9 +1,24 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+	<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>warnings</Nullable>
+    <AnalysisLevel>6.0-all</AnalysisLevel>
+	
+    <Title>TCA.SearchEngineCorrection</Title>
+    <Authors>alekami649_2</Authors>
+    <Version>0.1.0</Version>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/alekami649/tca</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/alekami649/tca</PackageProjectUrl>
+    <Copyright>Copyright (c) 2023 Alexey</Copyright>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCA.Shared\TCA.Shared.csproj" />
+  </ItemGroup>
 
 </Project>
