@@ -20,6 +20,7 @@
     <PackageLicenseExpression>MIT-Modern-Variant</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>Correct your string(s) to the right ones for the search engine.</Description>
   </PropertyGroup>
 
   <ItemGroup>

@@ -28,15 +28,15 @@ public class ContainsAlgorithm : IAlgorithm
         {
             throw new ArgumentNullException(nameof(str));
         }
-        if (str.ContainsInvariant(ParasiticWords.The.ToString()))
+        if (str.ContainsInvariant(" " + ParasiticWords.The.ToString() + " "))
         {
-            result = result.ReplaceInvariant(ParasiticWords.The.ToString(), "")[1..];
+            result = result.ReplaceInvariant(" " + ParasiticWords.The.ToString() + " ", "")[1..];
         }
-        if (str.ContainsInvariant(ParasiticWords.Of.ToString()))
+        if (str.ContainsInvariant(" " + ParasiticWords.Of.ToString() + " "))
         {
-            var index = result.IndexOfInvariant(ParasiticWords.Of.ToString());
+            var index = result.IndexOfInvariant(" " + ParasiticWords.Of.ToString() + " ");
             var firstPart = result[..(index - 1)];
-            var secoundPart = result[(index + ParasiticWords.Of.ToString().Length)..];
+            var secoundPart = result[(index + (" " + ParasiticWords.Of.ToString() + " ").Length)..];
             secoundPart = secoundPart[1..];
             result = secoundPart + " " + firstPart;
         }
