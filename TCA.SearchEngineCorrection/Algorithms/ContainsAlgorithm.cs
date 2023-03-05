@@ -36,7 +36,7 @@ public class ContainsAlgorithm : IAlgorithm
         {
             var index = result.IndexOfInvariant(ParasiticWords.Of.ToString());
             var firstPart = result[..(index - 1)];
-            var secoundPart = result.Substring(index + ParasiticWords.Of.ToString().Length, result.Length - (index + ParasiticWords.Of.ToString().Length));
+            var secoundPart = result[(index + ParasiticWords.Of.ToString().Length)..];
             secoundPart = secoundPart[1..];
             result = secoundPart + " " + firstPart;
         }
