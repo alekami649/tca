@@ -9,16 +9,35 @@
 	
     <Title>TCA.SearchEngineCorrection</Title>
     <Authors>alekami649_2</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/alekami649/tca</RepositoryUrl>
     <PackageProjectUrl>https://github.com/alekami649/tca</PackageProjectUrl>
     <Copyright>Copyright (c) 2023 Alexey</Copyright>
     <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT-Modern-Variant</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TCA.Shared\TCA.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
