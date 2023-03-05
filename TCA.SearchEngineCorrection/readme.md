@@ -22,6 +22,6 @@ using TCA.SearchEngineCorrection;
 var algorithm = new ContainsAlgorithm();
 var result = algorithm.Convert("<your-prompt>");
 ```
-That will be give this result: 
-What is .NET -> .NET
+That will be give this result: <br />
+What is .NET -> .NET <br />
 Which is latest version of C# -> latest version of C#
