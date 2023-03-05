@@ -13,6 +13,7 @@ TCA - Text Correction Algorithm
 ### Third way (via UI):
 1. Open tab for installing NuGet Packages.
 2. Search for `TCA.SearchEngineCorrection`
+3. Install the first package
 
 ## Examples
 ### Clear parasitic (for search engine) words:
