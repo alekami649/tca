@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TCA.Shared\TCA.Shared.csproj" />
+    <PackageReference Include="TCA.Shared" Version="0.1.1" />
   </ItemGroup>
 
   <ItemGroup>

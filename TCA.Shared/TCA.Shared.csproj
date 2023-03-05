@@ -5,6 +5,10 @@
 	<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>TCA.Shared</Title>
+    <Version>0.1.1</Version>
+    <Description>Base for any TCA package.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
