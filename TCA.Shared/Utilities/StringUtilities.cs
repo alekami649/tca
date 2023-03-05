@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TCA.Shared;
 
 namespace TCA.Utilities
 {
@@ -38,6 +39,10 @@ namespace TCA.Utilities
         public static bool ContainsInvariant(this string str, string str2)
         {
             return str.Contains(str2, StringComparison.InvariantCultureIgnoreCase);
+        }
+        public static int IndexOfInvariant(this string str, string str2)
+        {
+            return str.IndexOf(str2, comparisonType: StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }
