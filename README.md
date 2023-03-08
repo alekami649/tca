@@ -19,7 +19,7 @@ TCA - Text Correction Algorithm
 ## Search Engine Correction
 ### Clear parasitic (for search engine) words:
 
-```
+```csharp
 using TCA.SearchEngineCorrection;
 var algorithm = new ContainsAlgorithm();
 var result = algorithm.Convert("<your-prompt>");
