@@ -25,4 +25,4 @@ var result = algorithm.Convert("<your-prompt>");
 ```
 That will be give this result: <br />
 What is .NET -> .NET <br />
-Which is latest version of C# -> latest version of C#
+Which is latest version of C# -> C# latest version

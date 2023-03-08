@@ -9,6 +9,7 @@ namespace TCA.Utilities
 {
     public static class StringUtilities
     {
+        internal static Dictionary<string, string> SymbolsReplacements { get; set; } = new() { { "#", "sharp"} };
         public static string ReplacePascalCase(this string str)
         {
             var builder = new StringBuilder();
@@ -35,6 +36,15 @@ namespace TCA.Utilities
         public static string ReplaceInvariant(this string str, string from, string to)
         {
             return str.Replace(from, to, StringComparison.InvariantCultureIgnoreCase);
+        }
+        public static string ReplaceSymbols(this string str)
+        {
+            var result = str;
+            foreach (var replacement in SymbolsReplacements)
+            {
+                result = result.ReplaceInvariant(replacement.Key, replacement.Value);
+            }
+            return result;
         }
         public static bool ContainsInvariant(this string str, string str2)
         {
